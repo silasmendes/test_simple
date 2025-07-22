@@ -1,0 +1,35 @@
+# Ignora o que não precisa ir para o build
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Diretórios de virtualenv
+env/
+venv/
+.venv/
+
+# VS Code
+.vscode/
+
+# Git
+.git/
+.gitignore
+
+# Arquivos de ambiente
+.env
+.env.*
+
+# Docker
+.dockerignore
+docker-compose.yml
+docker-compose.override.yml
+
+# Outras tranqueiras comuns
+*.log
+*.bak
+*.swp
+.DS_Store
+Thumbs.db

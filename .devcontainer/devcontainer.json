@@ -1,0 +1,12 @@
+{
+  "name": "python-flask-dev",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "forwardPorts": [5000],
+  "settings": {
+    "python.pythonPath": "/usr/local/bin/python"
+  },
+  "postCreateCommand": "pip install -r requirements.txt",
+  "remoteUser": "root"
+}
