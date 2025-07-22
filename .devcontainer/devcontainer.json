@@ -1,12 +1,13 @@
 {
-  "name": "python-flask-dev",
-  "build": {
-    "dockerfile": "../Dockerfile"
-  },
-  "forwardPorts": [5000],
+  "name": "Flask + Postgres DevContainer",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app",
   "settings": {
-    "python.pythonPath": "/usr/local/bin/python"
+    "terminal.integrated.defaultProfile.linux": "bash"
   },
+  "envFile": "../.env",
   "postCreateCommand": "pip install -r requirements.txt",
+  "forwardPorts": [5000],
   "remoteUser": "root"
 }
