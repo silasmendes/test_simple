@@ -1,35 +1,61 @@
-# Ignora o que não precisa ir para o build
+# Arquivos que não devem ir para o build do Docker
+
+# Git
+.git/
+.gitignore
 
 # Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.sqlite3
 
-# Diretórios de virtualenv
+# Virtual environments
 env/
 venv/
 .venv/
+ENV/
+
+# Environment files
+.env
+.env.*
+.env.example
 
 # VS Code
 .vscode/
+.history/
 
-# Git
-.git/
-.gitignore
-
-# Arquivos de ambiente
-.env
-.env.*
-
-# Docker
+# Docker files (não precisam estar no container)
+Dockerfile
+docker-compose*.yml
 .dockerignore
-docker-compose.yml
-docker-compose.override.yml
 
-# Outras tranqueiras comuns
+# Scripts de desenvolvimento
+*.sh
+Makefile
+
+# DevContainer
+.devcontainer/
+
+# Documentation
+README.md
+*.md
+
+# Logs e arquivos temporários
 *.log
+*.log.txt
+*.tmp
+*.temp
 *.bak
 *.swp
+*.swo
+*.pid
+*.seed
+
+# OS files
 .DS_Store
 Thumbs.db
+
+# Node modules (caso adicione frontend)
+node_modules/

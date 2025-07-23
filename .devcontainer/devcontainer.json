@@ -1,6 +1,6 @@
 {
   "name": "Flask + Postgres DevContainer",
-  "dockerComposeFile": "../docker-compose.yml",
+  "dockerComposeFile": "../docker-compose.codespaces.yml",
   "service": "app",
   "workspaceFolder": "/app",
   "postCreateCommand": "pip install -r requirements.txt",

@@ -3,12 +3,18 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.env
+*.sqlite3
+
+# Virtual environments
 env/
 venv/
 ENV/
 .venv/
-*.sqlite3
+
+# Environment files (o .env local deve ser ignorado, mas .env.example deve ser commitado)
+.env
+.env.local
+.env.*.local
 
 # VS Code
 .vscode/
@@ -23,13 +29,18 @@ ENV/
 *.swo
 docker-compose.override.yml
 
-# Arquivos de ambiente
-.env
-.env.*
-
 # MacOS/Linux/Windows
 .DS_Store
 Thumbs.db
 
 # Dev Containers (cache temporário, não o devcontainer.json)
 .devcontainer/*-cache/
+
+# Logs
+*.log.txt
+creation.log.txt
+*.log
+
+# Temporary files
+*.tmp
+*.temp
